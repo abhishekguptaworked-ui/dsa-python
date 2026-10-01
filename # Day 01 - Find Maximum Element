@@ -1,0 +1,32 @@
+## Problem
+
+Given a list of numbers, find the maximum element
+without using Python's built-in max() function.
+
+### Example
+
+Input:
+[10, 20, 40, 70, 30, 50]
+
+Output:
+70
+
+## Approach
+
+1. Take the first element as the maximum.
+2. Traverse the entire list.
+3. Compare each element with maximum.
+4. If the current element is greater, update maximum.
+5. At the end, maximum contains the largest number.
+
+## Time Complexity
+
+O(n)
+
+## Space Complexity
+
+O(1)
+
+## Python Solution
+
+See `find_maximum.py`.
