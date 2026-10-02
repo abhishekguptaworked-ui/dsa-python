@@ -1,0 +1,31 @@
+2️⃣ Big-O Time Complexity ⭐
+
+1) Direct access        → O(1) 
+ - students[2]
+
+2) One loop             → O(n)
+- for student in students:
+    print(student)
+
+3) Separate loops       → O(n)
+- for student in students:
+    print(student)
+
+for student in students:
+    print(student)
+
+4) Nested 2 loops       → O(n²)
+- for student1 in students:
+    for student2 in students:
+        print(student1, student2)
+
+5) Nested 3 loops       → O(n³)
+- for a in range(n):
+    for b in range(n):
+        for c in range(n):
+            print(a, b, c)
+
+6) Half each time       → O(log n)
+- 
+Efficient sorting    → O(n log n)
+Some branching recursion → O(2ⁿ)
