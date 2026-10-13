@@ -1,0 +1,23 @@
+
+# Test of Binary Serach 
+
+numbers = [5, 15, 25, 35, 45, 55, 65]
+target = int(input("Traget:"))
+
+left = 2
+right = len(numbers) - 1
+found = False
+
+while left <= right:
+    mid = (left + right) // 2
+
+    if numbers[mid] == target:
+        print("Index Found",mid)
+        found  = True
+        break
+    elif numbers[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+if not found:
+    print("not found ")
