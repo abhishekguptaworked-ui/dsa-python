@@ -1,0 +1,21 @@
+numbers = [10, 20, 30, 40, 50]
+
+target = int(input("User Target:"))
+
+left = 0
+right  = len(numbers) - 1
+found  = False
+
+while left  <  right : 
+    sum_numbers = numbers[left] + numbers[right]
+
+    if sum_numbers == target:
+        print("Found Sum Value", numbers[left],numbers[right])
+        break
+    elif sum_numbers < target : 
+        left += 1
+
+    else:
+        right -= 1
+        if not found : 
+         print("Not Found")
